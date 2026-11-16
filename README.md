@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/zabbix-1?utm_medium=integration&utm_source=button&utm_campaign=zabbix)
+
 # Zabbix on Railway
 
 A Railway template for [Zabbix](https://www.zabbix.com/) **8.0 LTS**, the open-source monitoring platform for servers, networks, applications and cloud services. It is built from the official Zabbix Docker images, pinned by version and digest.
