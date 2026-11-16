@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.0.0-2 (2026-11-16)
+
+- README: add the Deploy on Railway button for the published template `zabbix-1`. No change to the services.
+
 ## 8.0.0-1 (2026-11-16)
 
 First release of the template.
