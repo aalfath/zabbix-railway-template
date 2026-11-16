@@ -8,8 +8,11 @@ RUN printf '\nlocation = /healthz {\n    access_log off;\n    default_type text/
 COPY --chmod=755 railway-start.sh /usr/local/bin/railway-start.sh
 USER 1997
 
+# ZBX_SERVER_PORT must be set too: the frontend only uses ZBX_SERVER_HOST when both
+# are set, otherwise it falls back to the server's NodeAddress (localhost:10051).
 ENV PHP_TZ=UTC \
     ZBX_SERVER_NAME=Zabbix \
+    ZBX_SERVER_PORT=10051 \
     DB_SERVER_PORT=5432
 
 EXPOSE 8080
